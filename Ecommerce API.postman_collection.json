@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "3fb14c3f-ad9b-4d5b-a18e-0fbcacb0163f",
+		"name": "Ecommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "VSW_001_fetch_single_user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_users/1",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VSW_006_fetch_single_user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_users",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VSW_005_delete_single_user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/delete_user/17",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"delete_user",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VSW_002_fetch_all_users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_users",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VSW_003_add_user_using_payload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"name\": \"noobster\",\r\n    \"password\": \"Pass@123\",\r\n    \"role\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/create_user",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"create_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VSW_004_update_user_using_payload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 13,\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"name\": \"abcd\",\r\n    \"password\": \"Pass@123\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/update_user",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"update_user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "AKP_001_fetch_single_customer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_customer/1",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AKP_006_fetch_single_customer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_customer/6",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_customer",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AKP_005_delete_single_customer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/delete_customer/5",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"delete_customer",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AKP_002_fetch_all_customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_customers",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AKP_003_add_customer_using_payload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"name\": \"noobster\",\r\n    \"password\": \"Pass@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/create_customer",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"create_customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AKP_004_update_customer_using_payload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 13,\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"name\": \"abcd\",\r\n    \"password\": \"Pass@123\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/update_customer",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"update_customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "BT_002_fetch_single_product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_product/76",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_product",
+								"76"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BT_003_fetch_single_product_unspecific_id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_product/1",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BT_001_fetch_all_products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ecomhost}}/fetch_products",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"fetch_products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authorization & Athentication",
+			"item": [
+				{
+					"name": "login_auth",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFudXJhZ2FrcDQ1NkBnbWFpbC5jb20iLCJpYXQiOjE2MzE2MDg5OTR9.PviB4v353a4YHnkZKGC8d37PnI8jayZr7-zniXgkzCU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sunil@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "Pass@123",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/ecommerce/API/auth_login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ecommerce",
+								"API",
+								"auth_login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify_auth",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtaXRAZ21haWwuY29tIiwiaWF0IjoxNjMxODY3MTkzfQ.3E36sAF70LRG9kQYo5ytplFlPU1ASV1Z0ETqpb0KAB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/ecommerce/API/auth_verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ecommerce",
+								"API",
+								"auth_verify"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DDT",
+			"item": [
+				{
+					"name": "insert_shipping_cost",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {    \r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201, 202]);\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check Country verification\", function () {    \r",
+									"    var jsonData = pm.response.json()   \r",
+									"         //console.log(jsonData)    \r",
+									"    pm.expect(jsonData.country).to.eql(pm.iterationData.get(\"country\"));\r",
+									"\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtaXRAZ21haWwuY29tIiwiaWF0IjoxNjMxNzcwNDE1fQ.T4xKVCJXF8Wi6b2zz5B_CiWlXimIzb0HhajXGZH1IUc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "country",
+									"value": "{{country}}",
+									"type": "text"
+								},
+								{
+									"key": "shipping_cost",
+									"value": "{{cost}}",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/insert_shipping_cost",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"insert_shipping_cost"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shipping",
+			"item": [
+				{
+					"name": "get_shipping_cost",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\": \"Australia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ecomhost}}/get_shipping_cost",
+							"host": [
+								"{{ecomhost}}"
+							],
+							"path": [
+								"get_shipping_cost"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtaXRAZ21haWwuY29tIiwiaWF0IjoxNjMxNzgyMzI1fQ.Md0ZAd-EjgorVUihe2EDgvs8jOzFlweYBmSPEwbKjmI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

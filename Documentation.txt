@@ -1,0 +1,64 @@
+Shopping
+    |__db
+    |	|__dbcon.js
+    |
+    |__node_modules
+    |	|__All required Libraries
+    |
+    |__routes
+    |	|__router.js
+    |	
+    |__.env
+    |__Create_DB.sql
+    |__ddt.json
+    |__Ecommerce API.postman_collection.json
+    |__package.json
+    |__package-lock.json
+    |__server.js
+
+Files Details:-
+
+1) dbcon.js :- dbcon.js store all configuration of database like hostname,username,password etc.
+2) node_modules :- This folder store all necessary libraries that require to run API
+3) route :- This folder has code for all resources that we can access.
+4) .env :- This files store configuration like token and database details.
+5) Create_DB.sql :- This file has all SQL Queries that need to create necessary tables for API calls.
+6) ddt.json :- This is payload file.
+7) Ecommerce... :- It is exported collection stored in JSON format. You can use this to directly 
+		Import collection on your machine
+8) package.json :- Stores configuration of server
+9) package-lock.json :- This file has information about libraries used in project
+10) server.js :- This is first file from where server start and port is allocated.
+
+
+Software requirement :-
+1) Xammp
+2) Postman
+3) Node.js.
+(Any Latest version can be used)
+
+Steps to Start API Server
+A) Database Setup:-
+	1) Open Xammp and start apache and mysql services.
+	2) launch Admin panel of MYSQL.
+	1) Create Database with Name 'fashiony_ogs'
+	2) Import Create_DB.sql file.
+		This file will create necessary tables and insert data into it.	
+	3) Done With DB Setup
+
+B) Node.js Setup:-
+	1) Ensure Node.js is successfully installed.
+	2) Clone/extract Shopping repo/zip
+	3) Open Shopping Folder and open command promp inside it.
+	4) use "npm i" command to install necessary libraries
+	5) use "npm start" command. This will start server.
+
+C) Postman Setup:-
+	1) Open Postman
+	2) Import -->File-->Upload Files-->Select "Ecommerce API.postman_collection.json" file from 
+		 Shopping Folder.
+	3) You Can see different folders and request inside collection.
+	4) You can call API.
+	5) Keep Server up and running, started in B(5) Step.
+
+

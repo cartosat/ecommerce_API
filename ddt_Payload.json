@@ -1,0 +1,22 @@
+[
+    {
+    "country": "Morocco",
+    "cost": 90
+    },
+    {
+        "country": "Australia",
+        "cost": 600
+    },
+    {
+        "country": "Saudi Arabia",
+        "cost": 300
+    },
+    {
+        "country": "Singapore",
+        "cost": 200
+    },
+    {
+        "country": "Pakistan",
+        "cost": 5
+    }
+]
